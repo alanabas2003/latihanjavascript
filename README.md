@@ -1,0 +1,2 @@
+# latihanjavascript
+tugas javascript
