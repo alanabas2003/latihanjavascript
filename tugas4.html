@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variabel dan Tipe Data</title>
+</head>
+<body>
+    <h1>Contoh Variabel dan Tipe Data dalam JavaScript</h1>
+    <h2>Informasi Pengguna</h2>
+    
+    <div id="output"></div>
+
+    <script>
+        // Deklarasi variabel dengan berbagai tipe data
+        var nama = "John Doe"; // String
+        var umur = 30; // Number
+        var mahasiswa = true; // Boolean
+        var alamat = null; // Null
+        var hobi = ["Membaca", "Bersepeda", "Berenang"]; // Array
+        var pekerjaan = {posisi: "Pengembang", pengalaman: 5}; // Object
+
+        // Operasi dasar
+        var tahunLahir = 2025 - umur;
+        var statusMahasiswa = mahasiswa ? "Mahasiswa Aktif" : "Bukan Mahasiswa";
+
+        // Output menggunakan console.log()
+        console.log("Nama: ", nama);
+        console.log("Umur: ", umur);
+        console.log("Tahun Lahir: ", tahunLahir);
+        console.log("Status Mahasiswa: ", statusMahasiswa);
+        console.log("Alamat: ", alamat);
+        console.log("Hobi: ", hobi);
+        console.log("Pekerjaan: ", pekerjaan);
+
+        // Output menggunakan alert()
+        alert("Halo, " + nama + "! Anda lahir pada tahun " + tahunLahir);
+
+        // Output menggunakan document.write()
+        var output = `
+            <p>Nama: ${nama}</p>
+            <p>Umur: ${umur}</p>
+            <p>Mahasiswa: ${mahasiswa}</p>
+            <p>Alamat: ${alamat}</p>
+            <p>Hobi: ${hobi.join(", ")}</p>
+            <p>Pekerjaan: ${pekerjaan.posisi}</p>
+            <p>Pengalaman: ${pekerjaan.pengalaman} tahun</p>
+        `;
+        
+        document.getElementById("output").innerHTML = output;
+    </script>
+</body>
+</html>
